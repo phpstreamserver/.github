@@ -5,23 +5,16 @@
   </picture>
 </p>
 
-**PHPStreamServer** is a high performance event-loop based application server and supervisor for PHP written in PHP.  
-PHPStreamServer ships with a number of plugins to extend functionality such as http server, scheduler and logger. See all the plugin packages below.  
-With all the power of plugins, it can replace traditional setup for running php applications like nginx, php-fpm, cron and supervisor.
+[**PHPStreamServer**](https://phpstreamserver.dev/) is a high-performance, event-loop-based application server and supervisor for PHP, written in PHP.  
+Built on top of the [AMPHP](https://amphp.org/) ecosystem and powered by the [Revolt](https://revolt.run/) event loop,
+PHPStreamServer delivers asynchronous capabilities that empower the development of efficient and scalable PHP applications.
+PHPStreamServer ships with a collection of plugins, making it highly extensible.
+With the power of plugins, PHPStreamServer can replace traditional setups such as nginx, php-fpm, cron, and supervisor.
+By centralizing these functionalities into a single application server, it reduces complexity and simplifies application deployment.
+Being written in PHP, it only requires PHP to run—no additional dependencies are needed.
+Applications run in an always-loaded, in-memory model, which significantly improves performance by eliminating the overhead of repeated
+loading and initialization.
 
-![PHP >=8.2](https://img.shields.io/badge/PHP->=8.2-777bb3.svg)
-![Version](https://img.shields.io/github/v/tag/phpstreamserver/phpstreamserver?label=Version&filter=v*.*.*&sort=semver&color=374151)
-![Tests Status](https://img.shields.io/github/actions/workflow/status/phpstreamserver/phpstreamserver/tests.yaml?label=Tests&branch=main)
+<h3>Please read the official documentation to get started: https://phpstreamserver.dev/</h3>
 
-Please read the official documentation: https://phpstreamserver.dev/
-
-### Packages
-| Package                                                         | Description                                                                                       |
-|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [**Core**](https://github.com/phpstreamserver/core)             | The core of PHPStreamServer with a built-in supervisor.                                           |
-| [Http Server](https://github.com/phpstreamserver/http-server)   | Plugin that implements an asynchronous HTTP server.                                               |
-| [Scheduler](https://github.com/phpstreamserver/scheduler)       | Plugin for scheduling tasks. Works similar to cron.                                               |
-| [Logger](https://github.com/phpstreamserver/logger)             | Plugin that implements a powerful PSR-compatible logger that can be used by workers.              |
-| [File Monitor](https://github.com/phpstreamserver/file-monitor) | Plugin to monitor files and reload server when files are changed. Useful for development.         |
-| [Metrics](https://github.com/phpstreamserver/metrics)           | Plugin that exposes an endpoint with Prometheus metrics. Custom metrics can be sent from workers. |
-| [Symfony](https://github.com/phpstreamserver/symfony)           | Symfony bundle to integrate PHPStreamServer with a symfony application.                           |
+Main monorepo repository: https://github.com/phpstreamserver/phpstreamserver
